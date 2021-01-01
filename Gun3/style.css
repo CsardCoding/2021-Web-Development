@@ -1,0 +1,13 @@
+a{
+    color:rgb(3, 165, 76);
+    text-decoration: none;
+}
+li{
+    display: inline;
+    padding: 20px; /*Liste elemnaları arasındaki boşlıkları ayarladık.*/
+}
+h1{
+    border: 2px solid red;
+    text-align: center;
+}
+

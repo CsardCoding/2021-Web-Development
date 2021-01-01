@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords" content="TDs & Classes">
+    <meta name="description" content="TDs & Classes Çalışmamız..">
+    <style>
+        /*direk etikete ulaşıp css değişiklikleri yapabiliriz fakat p etiketinden birden fazla var*/
+        p{
+            color:rgb(255, 230, 0);
+            font-size: 20px;
+        }
+        /*Bir tanımlama yapıp onu ilgili etikete gömersek o tanımlamadaki değişiklikler gömdüğümüz etikete yansır.*/
+        .red{
+            color: rgb(255, 17, 0);
+        }
+        .cerceve{
+            border: 3px solid orangered;
+            
+        }
+        /*Yada asağıda ki gbi ıd değerleri ile ilgili etikete ulaşıp css uygulaması yapabilirsin.*/
+        #p1{
+            background-color: rosybrown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="cerceve">İd ile kendi oluşturduğumuz sınıf ile yada direk etiket ile ilgili alanlara css kodlaması yapmak</h1>
+    <p id="p1">
+        Lorem ipsum dolor sit amet.
+    </p id="p2">
+    <p style="color: blue;">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p class="red">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    
+</body>
+</html>
