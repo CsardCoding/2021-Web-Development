@@ -1,0 +1,33 @@
+
+/*Sayfadaki body dahil tüm etiketleri hedef aldık.
+
+*{
+    border: 1px solid rgb(0, 0, 0);
+}
+*/
+
+/*Div altındaki tüm p etiketlerini hedef altdık.
+div p{
+    border: 1px solid rgb(0, 0, 0);
+}
+*/
+
+/*Tüm div ve tüm p etiketlerini hedef aldık.
+div,p{
+    border: 1px solid rgb(0, 0, 0);
+}*/
+
+/*Üst etketi div olan bütün p etiketlerini hedef aldık.
+div>p{
+    border: 1px solid rgb(0, 0, 0);
+}*/
+
+/*p1 ile aynı seviyedeki div etiketlerini hedef aldık.
+.p1~div{
+    border: 1px solid rgb(0, 0, 0);
+}*/
+
+/*P etiketinden sonra gelen aynı seviyedeki ilk div etiketini hedef aldık.*/
+p+div{
+    border: 1px solid rgb(0, 0, 0);
+}
