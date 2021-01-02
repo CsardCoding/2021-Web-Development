@@ -1,0 +1,27 @@
+p[title]{
+    border: 1px solid red;
+    padding: 5px;
+}
+p[title="p1"]{
+    background-color: gray;
+}
+
+a[href^="https"]{
+    background-color: greenyellow;
+}
+a[href$="Gun_1.html"]{
+    background-color: crimson;
+}
+input[type="text"]{
+    display:block;
+    width: 150px;
+    background-color: rgb(61, 132, 165);
+}
+input[type="button"]{
+   
+    font-size: 30px;
+    background: gray;
+    color: #ffffff;
+    padding: 8px 16px;
+    
+}
