@@ -1,0 +1,89 @@
+/*Psedu Elements: Bir paragrafın ilk harfini yada ilk satırını hedef almak için kullanılır.
+Yani bir elemanın belirli bir parcasını (ölümünü) hedef almak içim kullanılır.*/
+
+p::first-line{ /*Paragrafın ilk satırını temsil ediyor.*/
+    color:brown;/*Dinamik br yapıdadır sayfamız küçülse dahi ilk satıra asagıdaki işlemleri etki etmesini sağladık*/
+    font-weight: bold;
+    word-spacing: 3px; /*kelimeler arasındaki mesafeyi ayarladık.*/
+    letter-spacing: 3px;/*Harfler arasındaki boşluğu ayarladık.*/
+
+}
+p.p2::first-line{/*Paragrafın ilk satırını temsil ediyor.*/
+    color: green;
+
+}
+p::first-letter{/*Paragrafın ilk harfini temsil ediyor.*/
+    font-size: 50px;
+
+}
+p::after{ /*Bir paragrafıtan sonra içerik eklemek için*/
+    content: "Yazar:Recep ALTUN";/*içerik kısmı boş bırakırsak aslında bir eleman var ancak içeirk olmadığı için görünmüyor. */
+    display: block;
+    background-color: rgb(161, 197, 157);
+}
+p::before{ /*Bir paragrafıtan önce içerik eklemek için*/
+    content: "";/*içerik kısmı boş bırakırsak aslında bir eleman var ancak içeirk olmadığı için görünmüyor. */
+    display: block;
+    background-color: rgb(235, 23, 182);
+    padding: 5px; /*içerik alanının görünebilmesi için yaptık.*/
+}
+
+
+/*Psedu Class: Bir kapsam içindeki elementin alt elementlerini hedef almak için kullanılır.*/
+
+
+ul li:first-child{/*ul nin altındaki ilk elemanı temsil ediyor.*/
+    background-color: rgb(99, 104, 107);
+}
+ul li:last-child{/*ul nin altındaki son elemanı temsil ediyor.*/
+    background-color: rgb(2, 156, 245);
+
+}
+ul li{/*ul nin altındaki li'leri hedef aldık.*/
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+ul li:nth-last-of-type(even){/*ul nin altındaki li lerden çift sırada olanları hedef aldık.*/
+    border: 3px solid rgb(0, 38, 255);
+
+}ul li:nth-last-of-type(odd){/*ul nin altındaki li lerden tek sırada olanları hedef aldık.*/
+    border: 3px solid rgb(214, 200, 3)
+}
+
+a{
+    padding: 5px 10px;
+    text-decoration: none;/* altındaki çizgilerin kaybolmasını sağladık.*/
+    display: block;/* blok haline getirdik.*/
+    width: 80px; /* genişlik verdik border uygularsak daha net anlaşılmakta*/
+    border: 2px solid gray;
+    margin-bottom: 10px; /* Linklerimiz arasındaki mesafeyi ayarladık.*/
+    
+}
+a:link{ /* bu linkin tıklanmamış halini hedef aldık. ziyaret edilmemiş hali*/
+    color:red;
+
+}
+a:visited{/* bu linkin tıklanmış halini hedef aldık.*/
+    color:gray;
+
+}
+a:hover{/* bu linkin üzerine mausla gelindiğindeki halini hedef aldık.*/
+    color:white;
+    background: green;
+}
+a:active{/* bu linkin mausla birkes tıklanmış halini hedef aldık.*/
+    color:green;
+    background: gold;
+
+}
+
+span{
+    display: none;/*spanı görünmez yaptık*/
+    background-color: yellow;
+    padding: 5px;
+}
+
+div:hover span{ /*div üzerie gelindiğinde span etiketini hedef aldık.*/
+    display: block;
+}
