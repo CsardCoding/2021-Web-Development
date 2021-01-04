@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Inherits</title>
+    <meta name="keywords" content="css-Inherits">
+    <meta name="description" content="css-Inherits eğitimini sizlere aktarmaktayız.">
+    <link rel="stylesheet" href="css-Inherits.css">
+
+    <style>
+        body{
+            color: red;
+        }
+
+        ul{
+            color: blue;
+        }
+        ul li{
+            font-size: 35px;
+            
+        }
+        .list{/*Class ına göre özellik atadık.*/
+            color: orange;
+            
+        }
+        #l2{ /*id sine göre özellik atadık.*/
+            background-color: gray;
+            color: green;
+            font-size: 45px ;
+        }
+        a{/*a nın bir üst elemanıdan miras aldık.*/
+            color: inherit;
+        }
+        span{ /*Span etiketini hedef aldık.*/
+            border: 1px solid red;
+            color: rgb(247, 231, 12);
+        }
+        #inherid span{ /*Span etiketinin bir üst elemanından miras aldık.*/
+            color: inherit;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Komple uygulamalı css eğitimi</h1>
+    <ul>
+        <li id="l2" class="list">Html</li>
+        <li id="">css</li>
+        <li class="list">javascrpt</li>
+        <li id="l2">  <a href="">jquery</a href></li>
+    </ul>
+    <p style="color:aqua;">
+        Lorem ipsum dolor sit amet <span> consectetur adipisicing elit.</span>Beatae, autem?
+    </p>
+    <p id="inherid" style="color: green;">
+        Lorem ipsum dolor sit amet, <span> consectetur adipisicing elit.</span> Magnam ut,
+        ex commodi saepe repellat et ullam voluptas unde architecto fugit recusandae sunt
+        cupiditate similique inventore dolorem numquam quibusdam culpa molestias?
+    </p>
+    <p style="color: blue;"> 
+        Lorem ipsum dolor sit amet <span>consectetur adipisicing elit.</span>  Sint libero consequatur dolores,
+        unde fugiat eius possimus, totam nostrum ea aliquid necessitatibus repellendus explicabo molestiae.
+        Quae laborum soluta sit debitis tempore.
+    </p>
+
+</body>
+
+</html>
