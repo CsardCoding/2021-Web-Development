@@ -1,0 +1,24 @@
+/*Divleri sayfa içinde içeriklerimizi bölümlendirmek için kullanıyoruz.*/
+
+
+
+#section-one{/*Bölüm 1'i hedef aldık.*/
+    color: red;
+    background-color: grey;
+    width: 300px;
+    height: 100px;/*Sabit yükseklik.
+     Eğer bu div in içindeki paragrafları coğaltırsak paragraflarımız div in dışına taşacaktır.
+     Bunun nedeni sabit bir yükseklik vermemizdendir. Bu durumu düzeltmek için css de  overflow diye birsey var 
+     anlamı Taşma olursa..*/
+     overflow:hidden;/*Taşan kısımlar görünmez.*/
+     overflow:auto;/*Taşma varsa scollbar görünür.Onun haricinde görünmez.*/
+     overflow:scroll;/*Taşma olmasa bile scolbar görünümündedir..*/
+     
+
+}
+#section-two{/*Bölüm 2'yi hedef aldık.*/
+    color: blue;
+    background-color: rgb(117, 181, 192);
+    width: 50%;
+    
+}
