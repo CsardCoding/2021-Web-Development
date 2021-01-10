@@ -1,0 +1,13 @@
+/*Renk rgb(arcibi) kodlarını bulabileceğimz adres.
+https://www.w3schools.com/cssref/css_colors.asp*/
+
+
+h2{ /*H2 etiketini hedef aldık*/
+    color: red;
+}
+p{/* P etiketini hedef aldık.*/
+    background-color:rgba(169, 209, 9,0.2); /*4. Kısım arka plan renginin belirginliği ile alakalıdır.*/
+}
+a{/*A Tiketini hedef aldık.*/
+    font-weight: bold;
+}

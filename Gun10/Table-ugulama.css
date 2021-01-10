@@ -1,0 +1,58 @@
+/*
+Kod	Anlamı
+<table>	Tabloya başlamak.
+<tr>	Satıra başlamak.
+<td>	Sütuna başlamak.
+
+Eğer iki sütunu birleştireceksek colspan="" 
+ya da iki satırı birleştireceksek rowspan=""
+özelliğini td kodu içerisinde kullanarak tırnak işareti arasına kaç sütun ya da satır birleştiğini yazmamız gereklidir.*/
+
+
+table{ /*Tablomuzun genelini hedef aldık. */
+   
+    width: 100%;
+    border-collapse:collapse; /*hücrelerin sağında ve solında oluşan boşlukları kaldırdık.*/
+    font-family:monospace; /*Bu alanın yazı tipini hedef altık.*/
+   
+}
+table th,table td{ /*Tablo başlığına ve tablo sutunlarını hedef aldık. */
+    border: 1px solid rgb(209, 207, 207);
+    padding: 10px;
+
+}
+table tr:nth-child(even){/*Tabomuzda çift sıradaki satırları hedef aldık.*/
+    background-color: #929090;
+}
+
+Table tr:hover{/*Fare ile tablo üzerine gelidiğinde durumunu hedef aldık.*/
+    background-color: rgb(235, 228, 228);
+}
+table th{/*Tablo Başlığımızı hedef aldık.*/
+    text-align: left;
+    font-size: 20px;
+    background-color: #2196F1;
+    color: white;
+   
+}
+.blue th{
+    background-color:#249af3;
+
+    
+}
+
+.ses-benzemesi{/*class ismi ses-benzemesi olan satırı hedef aldık.*/
+    font-weight:bolder; /* bu alanı koyulaştırdık*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*bu lanın yazı tipini hedef aldık.*/
+    
+    
+    
+}
+
+.green th{
+    background-color:rgb(14, 224, 14);
+}
+
+
+
+
