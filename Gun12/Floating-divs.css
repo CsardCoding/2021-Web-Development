@@ -1,0 +1,37 @@
+#cerceve{
+    background:grey;
+}
+
+
+div.box {/*Div etiketlerinin altındaki clası box olanların tamamını hedef aldık.
+    ve yükseklik ve genişik vererek kare şeklinde olmasını sağladık.*/
+    width: 150px;
+    height:150px;
+    margin: 20px;/*Divler arasındaki boşlığu ayarladık.*/
+}
+#div_1{
+    background: red;
+    float: left;
+   
+}
+#div_2{
+    background: rgb(25, 116, 7);
+    float: left;
+}
+#div_3{
+    background: rgb(40, 140, 170);
+    float: left;
+}
+
+/*overflow 1. yol*/
+.clear{
+    overflow:auto;/*cercevenin dışına taşmasını önledik.*/
+}
+
+/*overflow 2. yol*/
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
