@@ -1,0 +1,30 @@
+/*İnline elemanlara genişlik ve yğkseklik veremeyiz. 
+  Blok elemanlar genişlik ve yükseklik verebiliriz.
+  _inline elemanlara genişlik ve yükseklik vermek istersek display özelliğini değiştirmemiz gerekir.
+  ben aynı satırda yer almasını aynı zamanda genişlik ve yükseklik vermek istersem display özelliği inline-blok özelliğini kullanacağız.
+  */
+
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+    /*display: inline; _______Satır haline getirdi.*/
+    display: inline-block;
+}
+#div_1{
+    /*display: none;__________Nesnemiz sayfa üzerinde görünmez hale gelir.*/
+   
+}
+#div_2{
+    width: 50px;
+
+}
+span{
+    display: inline-block;
+    background: green;
+    width: 100px;
+    height: 100px;
+}
+
