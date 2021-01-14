@@ -1,0 +1,32 @@
+li a{
+    text-decoration: none;/*sabit gelen text özelliğini iptal ettik. (Altı çizili olamsı mesela)*/
+}
+
+#bir li{/*içerik hizalama işlemini flat ile yaptık*/
+    list-style: none;
+    float: left; /*Yan yana hizalama işlemi yaptık.*/
+    margin: 10px;/*li elemanları arasındaki mesafeyi ayarladık.*/
+    padding: 10px;/*yazı ile çerceve arasındaki mesafeyi ayarladık.*/
+    border: 2px solid red;
+    
+}#iki li{/*Float ile yaptığımız işlemin aynısını display özelliğini kullanarak yaptık.*/
+    display: inline;/*Satır haline getirdik bu özellikte yükseklik ve genişlik veremeyiz.*/
+    display: block;/*Blok haline getirdik genilik ve yükseklik verilebilir.*/
+    display: inline-block;/*(inline) ve (Blok) birleşimidir. her iki komut özelliklerini içinde barındırır.*/
+    border: 1px solid green;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    margin: 80px;
+    padding: 10px;
+    
+}#uc li{
+    display: block;/*Blok etiketi haline getirdik bu özellikte yükselik ve genişlik verilebilir.Blok olduğu için alt alta olur.*/
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+#iki .L1{
+    display: none;/*Bu liste elemaını gizledik.*/
+   
+}

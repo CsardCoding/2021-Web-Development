@@ -1,0 +1,63 @@
+div{
+    width: 150px;
+    height: 150px;
+}
+#cerceve_1{
+    width: 1140px;
+    background-color: gray;
+    margin: 20px;
+
+}
+#cerceve_2{
+    width: 1140px;
+    background-color: gray;
+    margin: 20px;
+    
+}
+#cerceve_3{
+    width: 1140px;
+    background-color: gray;
+    margin: 20px;
+    position: relative; /*Absolit 3 dive göre hizalanmasını istiyorsak 
+    ilgili bloğa (position relative) dersek aynn burada olduğu gibi absolit li nesneyi cerceve_3 e göre hızaladık.
+    Relative nesneyi arar ve kendini ona göre ayarlar eğer bulamaz ise kendini body e göre hizalar.*/
+    
+}
+#cerceve_2{
+    width: 1140px;
+    background-color: gray;
+    margin: 20px;
+    
+}
+
+#D1{
+    background-color: royalblue;  
+}
+#D2{
+    background-color: rgb(29, 138, 8); 
+    position: relative;
+    left: 500px;
+}
+#D3{
+    background-color: rgb(219, 181, 11); 
+    position:absolute;
+    top: 50px; 
+    left: 50px;
+}
+#D4{ /*Position:Fixed : olayında ise dört köşşeden hizalama yapabiliriz.
+    tek farkı skul bar asağıya inse bile hizalama yapılan konumda sabit kalır böylece sürekli görünür hale gelir.*/
+    background-color: rgb(225, 65, 177); 
+    position:fixed;
+    top: 0px;
+    right: 0px;
+
+}
+h3{/*position: sticky; olayında da aşağıda olduğu gibi h3 başlığına bunu verdiğimizde 
+    skul bar aşaıya doğru hareket ettiğinde üstten 0px e geldiğinde kendini sabiter
+    ve skul bar asağıya inse bile kendini sabitler ve görünmesini sağlar.
+    örneğin;üst tarafta bulunan menülerde kullanılabilir.*/
+    position: sticky;
+    top: 0px;
+    background-color: rgb(93, 195, 226);
+    padding: 15px;
+}
