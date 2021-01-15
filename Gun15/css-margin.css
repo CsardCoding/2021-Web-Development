@@ -1,0 +1,40 @@
+body{
+    margin: 50px;
+    margin: 0px;
+}
+
+
+
+div{
+    width: 150px;
+    height: 150px;
+    float: left;
+    /*display:inline-block;_______Aralarında extra boşluk brakır.*/
+    margin-left: 20px;/*her kutu sağından 20px mesafe braktı.*/
+}
+.d1{
+    background-color: royalblue;
+    /*margin: 50px;*/
+    /*margin:500px 10px*/
+ 
+    
+}
+.d2{
+    background-color: rgb(20, 128, 86);
+     /*margin: 100px;*/
+     /*margin: 10px 30px 50px 100px;*/
+}
+.d3{
+    background-color: rgb(238, 144, 55);
+    /*margin: 150px;*/
+}
+span{
+    background-color: rgb(68, 143, 230);
+    margin:50px/*varsayın olarak inlne bir etikettir.
+     İnline etiketlere margin değeri atarsak sağdan ve soldan margin değeri alır.
+     İnline etiketler alttan ve üstten margin değeri almaz*/
+    
+}
+span{/*İnline etiketinin margin değerini 4 köşeden verebilmek için display'ini inline-blok olarak değiştirdik.*/
+    display: inline-block;
+}

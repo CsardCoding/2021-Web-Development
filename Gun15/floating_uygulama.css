@@ -1,0 +1,19 @@
+.cerceve{/*En Dıştakı sabit enişlikteki çerçevemiz.*/
+    width: 1140px;
+    /*background-color:rgb(14, 130, 165);*/
+}
+
+#blog-post-icerik{/*Sayfamızın %75 lik ksımı.*/
+    width: 75%;
+    /*background-color: rosybrown;*/
+    float: left;
+    
+}
+#others-post{/*Sayfamızın /25 lik kısmı.*/
+    width: 25%;
+    /*background-color: rgb(211, 181, 14);*/
+    float: left;
+}
+#yazar{
+    border: 3px solid rgb(14, 0, 0);
+}
