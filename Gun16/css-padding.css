@@ -1,0 +1,30 @@
+*{ /*Sayfadaki tüm etiketlerin margin değerini sıfırladım.*/
+    margin: 0px;
+}
+.box{/*box'a sabit bir genişlik verdik.*/
+    width: 500px;
+}
+#ornek1{
+    background-color: blue;
+    padding: 20px;
+    
+}
+#ornek2{
+    background-color: chocolate;
+    padding-top: 10px;
+    padding-left:800px ;/*pading değerleri içeriğin genişliğine eklenir.
+     (öernek; 500px genişliğimiz var burda sağdan 800px verdim o zman 1300px oldu.
+     pading ile 4 br köşeden oynama yapılabilir.)*/
+    /*display: inline-block;*/
+}
+span{
+    background-color: red;
+    margin-top:200px;
+    margin-left: 50px;
+    padding-top: 30px;/*margin değeri verdiğimizde akışın dışına taşmadan kendini ayarlama yapıyordu.
+    Padingte ise nesne akışın neresinde ise bulunduğu noktaya sabitleniyor. Bu sorunu önlemek için aşağıdakii gibi 
+    display özelliğini inline blok yaparsak düzelir.*/
+    display:inline-block;
+
+    
+}
