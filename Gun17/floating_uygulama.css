@@ -1,0 +1,116 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(214, 209, 209);
+}
+.cerceve{/*En Dıştakı sabit enişlikteki çerçevemiz.*/
+    width: 1140px;
+    /*background-color:rgb(14, 130, 165);*/
+    margin: 50px;
+    margin:20px auto;
+   
+}
+
+
+#blog-post-icerik{/*Sayfamızın %75 lik ksımı.*/
+    width: 75%;
+    /*background-color: rosybrown;*/
+    float: left;
+   
+    
+    
+}
+.box{
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+
+}
+
+#others-post-menu{/*Sayfamızın /25 lik kısmı.*/
+    width: 25%;
+    /*background-color: rgb(211, 181, 14);*/
+    float: left;
+    padding-left:10px; /*box-sizing: border-box; özelliği border ve paddingler için geçerli*/
+    /*right: 50px; ______bu kodu kaldırırsak menu kısmı sağa kayıyor 
+    işte bu alanı %25 lik kısımda saitlemek istiyorsak içinde bir div oluşturmamız gerekli biz zaten oluşturduk.*/
+    
+  
+
+}
+#inner-others-post-menu{
+    position:fixed;
+  
+    
+   
+}
+#yazar{
+    border-top: 1px solid rgb(0, 0, 0,.125);
+    padding-top: 10px;
+    
+    
+}
+#yazar img{
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    float: left;/*Sola doğru hizaladık.*/
+}
+.yazar_isim{
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;-top: 40px;
+    font-weight: bold;
+
+}
+/*
+.kaynak li{ Hizalama işlemini flat ile yapmış olsaydık.
+    2. blok post içerikle iç içe gececekti ve clear olayını yapmak zorunda kalacaktık. 
+   float: left; 
+   list-style: none;*/
+
+
+.kaynak li{ 
+    /*Hizalama işlemini display ile yaparsam 
+     clear olayını yapmama gerek kalmayacak 2. Blok port içerik ile karışmamış olacak. */
+   list-style: none;
+   display:inline-block; 
+   width: 70px;/*inline blok yaptığımız için genişlik ve yüksekliklerini de ayarlayabiliriz.*/
+   font-weight: bold;
+   margin-top: 20px;
+  
+   
+}
+.kaynak{/*listemizin boşluklarını sıfırlayarak sola doğru yaslanmasını sağladık. */
+    margin: 0px; 
+    padding: 0px;
+}
+.kaynak li a{
+    text-decoration: none;
+    color: rgb(221, 5, 5);
+    
+    
+
+}
+.date{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+}
+
+.blog-post{
+    position: relative;
+}
+.box img{
+    margin-bottom: 20px;
+    
+    width: 100%;/*divin içine sığmasını sağladık.*/
+}
+.box h2{
+    margin-bottom: 20px;
+}

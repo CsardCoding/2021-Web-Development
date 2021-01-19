@@ -1,0 +1,21 @@
+
+#box1{
+    box-sizing: content-box;/*Burafa pading ve border değerlerinin içine katılmadığı bir box model oluşturduk.*/
+    width: 300px;
+    height: 100px;
+    background-color: grey;
+    margin-bottom: 10px;/*Alttan kenart boşluğu verdik.*/
+    padding: 10px;
+    border: 10px solid black;
+  
+   
+}
+#box2{
+    box-sizing:border-box;/*Burada pading ve border değerlerinin içine katıldığı bir box model oluşturduk.*/
+    width: 300px;
+    height: 100px;
+    background-color: rgb(212, 124, 124);
+    padding: 10px;
+    border: 10px solid black;
+  
+}
