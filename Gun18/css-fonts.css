@@ -1,0 +1,21 @@
+/*Font türlerini google da (google fonts)  orarak aratıp oradan istediğimiz font türlerini kullanabiliriz.
+orada kollanmak için sectiğimiz fontun kütüphanesini css-fonts.html
+dosyasına head etiketleri içine ekliyoruz.*/
+
+
+body{/*bosy kısmını sayfanın içerik kısmını hedef aldık.*/
+    font-size: 20px;/*bosy kısmındaki yazıların büyüklüğünü hedef aldık.*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /*yazımızın seklini ayarladık.
+    burda virgülle ayrılmış birden fazla font türü var bu tarayıcı 1. yi desteklemez ise
+    2. yi kullan onuda desteklemez ise 3. yü kullan demektir.*/
+}
+span{/*sıan etiketini hedef aldık.*/
+    font-size: 30px;
+    font-size: 200%;/*body kısmına atadığımız font-size değerini baz alarak 2 katına çıkardık.*/
+    font-size: 3em;/*body kısmına atadığımız font-size değerini baz alarak 3 katına çıkardık.*/
+    font-size: 0.5em;/*body kısmına atadığımız font-size değerini baz alarak yarısına ayarladık.*/
+    font-size: 2em;
+    font-family: 'Indie Flower', cursive; /*gogole fonts tan sectiğin yazı tipini
+     css-fonts.html dosyasına eklediğim kütüphanemi burada kullandım. bu kısımda kütüphaneyi aldığımız
+     internet sitesinde mevcut.*/
+}
