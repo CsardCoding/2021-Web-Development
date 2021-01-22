@@ -1,0 +1,46 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 900px;/*İçerik genişliği verdik.*/
+    margin: 30px auto;/*üstten alttan 30px boşluk brak sağ solu ise otomatik ortala*/
+}
+h2{
+    text-transform:lowercase; /*h2 etiketinin tamamının yazı sitilini küçük yaptık.*/
+    text-transform: uppercase; /*h2 etiketinin tamamının yazı sitilini büyük yaptık.*/
+    text-transform:capitalize; /*h2 etiketinin tamamının baş haflerini büyük yaptık.*/
+    
+
+}
+p{
+    font-size: 20px;
+    line-height: 150%;/*Satır aralıklarını düzenledik.*/
+    word-spacing: 3px;/*kelimeler arasındaki mesafeyi ayarladık.*/
+    text-indent: 30px;/*Paragraf başı girintisini ayarladık..*/
+    letter-spacing: 1px;/*harfler arasındaki mesafeyi ayarladık..*/
+}
+p#p1{
+    text-align: left;
+}
+p#p2{
+    text-align: center;
+}
+p#p3{
+    border:2px solid rgb(0, 0, 0,0.4); /*Çerceve ekledik.*/
+    padding:20px;
+    text-align: right;  
+
+    /*asağıdaki colum count (colon bölme) özelliği css3 ile gelen bir özelliktir.
+    bu özelliğin tüm tarayıcılarda çalışması için
+    aynı kodlarımızı (webkit ve moz ekleyerek çoğaltmamız gerekir.)*/
+
+    column-count: 3; /*kolon 3( e bölündü (paragrafta 3 e paylaştırıldı.)*/
+    -webkit-column-count: 3;/*(opera crome safari) tarayıcıları için*/
+    -moz-column-count: 3;/*(mozilla) tarayıcısı için*/
+
+    column-rule: 2px solid rgb(0, 0, 0,0.4); /*kololar arası çizgi ekledik.*/
+    -webkit-column-rule: 2px solid rgb(0, 0, 0,0.4);
+    -moz-column-rule: 2px solid rgb(0, 0, 0,0.4);
+}
+p#p4{
+    text-align: justify; /*satırların sonlarında oluşan boşlukları kaldırdı. sağa ve sola tam hizalama işlemi yaptık.*/
+}
+

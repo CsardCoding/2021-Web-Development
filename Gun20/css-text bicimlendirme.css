@@ -1,0 +1,29 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 700px;/*İçerik genişliği verdik.*/
+    margin: 30px auto;/*üstten alttan 30px boşluk brak sağ solu ise otomatik ortala*/
+}
+h2{
+    text-transform:lowercase; /*h2 etiketinin tamamının yazı sitilini küçük yaptık.*/
+    text-transform: uppercase; /*h2 etiketinin tamamının yazı sitilini büyük yaptık.*/
+    text-transform:capitalize; /*h2 etiketinin tamamının baş haflerini büyük yaptık.*/
+    
+
+}
+p{
+    font-size: 20px;
+    line-height: 150%;/*Satır aralıklarını düzenledik.*/
+    word-spacing: 3px;/*kelimeler arasındaki mesafeyi ayarladık.*/
+    text-indent: 30px;/*Paragraf başı girintisini ayarladık..*/
+    letter-spacing: 2px;/*harfler arasındaki mesafeyi ayarladık..*/
+}
+.bold{
+  font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.link{
+    color:#03a9f4;
+    text-decoration: none;
+}
