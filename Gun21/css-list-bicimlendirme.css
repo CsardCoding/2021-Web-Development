@@ -1,0 +1,33 @@
+ol{
+    background-color: rgba(102, 100, 100, 0.25);
+    padding-left:0px;
+
+
+}
+
+ol li{
+    background-color:rgba(115, 111, 124, 0.25);
+    list-style: none;
+    padding: 5px;
+    padding-left: 20px;
+   
+    border-left: 5px solid  red;
+  
+
+}
+ul{
+    border:2px solid gray;
+    padding: 0px;
+}
+ul li{
+   
+    border-bottom:2px solid gray;
+    padding-left: 20px;
+    margin-top: 5px;
+    padding: 7px 12x;
+
+}
+ul li:last-child{/*liste elemanlarına ve listeye cerceve eklediğimizde en son listedeki elemanın ve genel liste çerçevesinin alt kısımları üst üste gelmeykeydi
+    bu kodu yazarak bu problemi çözmüş olduk.*/
+    border-bottom: none;
+}
