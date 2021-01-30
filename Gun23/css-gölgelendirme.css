@@ -1,0 +1,52 @@
+body{
+    background-color: grey;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 247, 243);
+    display:inline-block;
+    margin:10px;
+    border-radius: 3px;
+}
+.kutu_1{
+    /*Farklı tarayıcılarda desteklenmesi için (webkıt ve moz) altında anı işlemi yapıyoruz.*/
+    -webkit-box-shadow:10px 4px ;
+    -moz-box-shadow:10px 4px ;
+    box-shadow: 10px 4px ;
+
+}
+.kutu_2{
+    /*Farklı tarayıcılarda desteklenmesi için (webkıt ve moz) altında anı işlemi yapıyoruz.*/
+    -webkit-box-shadow:10px 4px 10px;
+    -moz-box-shadow:10px 4px 10px;
+    box-shadow: 10px 4px 10px;
+
+}
+.kutu_3{
+    /*Farklı tarayıcılarda desteklenmesi için (webkıt ve moz) altında anı işlemi yapıyoruz.*/
+    -webkit-box-shadow:20px 10px 30px 20px rgba(0,0,0,.4);
+    -moz-box-shadow:20px 10px 30px 20px rgba(0,0,0,.4);
+    box-shadow: 20px 10px 30px 20px rgba(0,0,0,.4);
+
+}
+.kutu_4{
+    /*Farklı tarayıcılarda desteklenmesi için (webkıt ve moz) altında anı işlemi yapıyoruz.*/
+    /*sırası ile değer karsılıkları (yatay dikey bulurn*/
+    -webkit-box-shadow:10px 4px 10px red;
+    -moz-box-shadow:10px 4px 10px red;
+    box-shadow:10px 4px 10px red;
+}
+.kutu_5{
+}
+.kutu_5:hover{
+    /*Farklı tarayıcılarda desteklenmesi için (webkıt ve moz) altında anı işlemi yapıyoruz.*/
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+}
+.kutu_6{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.30)
+}

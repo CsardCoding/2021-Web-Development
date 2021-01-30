@@ -1,0 +1,60 @@
+.box{
+    
+    width: 150px;
+    height: 80px;
+    border: 2px solid gray;
+    margin-bottom: 10px;
+    
+}
+ 
+    
+
+.kutu_1{
+    background: rgb(241, 7, 7);
+
+    margin-bottom: 10px;
+    /*_________________________________TARAYICI DESTEKLEMESİ İÇİN____________________________*/
+    -webkit-transition: width 2s, background 5s; 
+    -moz-transition: width 2s, background 5s; 
+    -o-transition: width 2s, background 5s;
+    /* ______________________________________________________________________________________*/
+    transition: width 2s, background 5s; /*1.parrametre değiştirilecek yer 2. parametre ise değiştirilme süresi*/
+  
+}   
+.kutu_1:hover{
+    width: 300px;
+    background-color: gray;
+}
+.kutu_2{
+    background: rgb(155, 178, 187);
+    transition: width 2s;
+    transition-delay: 2s;/*transtations un ne kadar süre sonra alayacağını belirttik.*/
+}   
+.kutu_2:hover{
+    width: 800px;
+}
+#kutu_3{
+    transition-timing-function: ease; 
+    /*yavaş başlayan, sonra hızlı, sonra yavaş biten bir geçiş efekti belirtir (bu varsayılandır)*/
+}
+
+#kutu_4{
+    transition-timing-function: linear;
+    /*baştan sona aynı hızda bir geçiş efekti belirtir*/
+}
+#kutu_5{
+    transition-timing-function: ease-in;
+    /*yavaş başlayan bir geçiş efekti belirtir*/
+}
+#kutu_6{
+    transition-timing-function: ease-out;
+    /*yavaş uçlu bir geçiş efekti belirtir*/
+}
+#kutu_7 {
+    transition-timing-function: ease-in-out;
+    /*yavaş bir başlangıç ​​ve bitişe sahip bir geçiş efekti belirtir*/
+}
+#kutu_8{
+    transition-timing-function: cubic-bezier(1, 2, 5, 6);
+    /*kübik bezier işlevinde kendi değerlerinizi tanımlamanıza izin verir*/
+}
