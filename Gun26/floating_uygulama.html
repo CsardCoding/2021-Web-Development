@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--İconu cektimiz internet adresi.-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--yazı fntlarının uzantıları-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Potta+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap" rel="stylesheet">
+
+
+    <title>Divs Uygulama</title>
+    <meta name="keywords" content="Divs Uygulama">
+    <meta name="description" content=" Çoklu Divs Uygulama çalışması için buradayız.">
+    <link rel="stylesheet" href="floating_uygulama.css">
+
+</head>
+
+<body>
+    <div id="nav">
+        <div class="cerceve ">
+            <ul>
+                <li><a href=""><i class="fas fa-home "></i></a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">Contact</a></li>
+                <li style="float: right;" class="Article"><a href="">Account</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="cerceve mrn20">
+        <div id="blog-post-icerik">
+            <!--%75 lik kısım.-->
+            <div class="blog-post box">
+                <img src="../Gun17/icerik.png" alt="">
+                <div class="blok-post-icerik p20">
+                    <h2 class="icerik-title">
+                        <a href="">1.içerik</a>
+                    </h2>
+                    <p class="date">31.12.2020</p>
+
+                    <p class="blog-text ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, voluptatum eaque vel ipsam dolores at.
+                        Nihil delectus fugiat quos magnam incidunt iusto est ex alias, laudantium vel veritatis eum
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, voluptatum eaque vel ipsam dolores at.
+                        Nihil delectus fugiat quos magnam incidunt iusto est ex alias, laudantium vel veritatis eum ut.
+                    </p>
+                    <ul class="kaynak ">
+                        <li><a href="">Html5</a> </li>
+                        <li><a href="">Angular</a> </li>
+                        <li><a href="">java</a> </li>
+                        <li><a href="">css</a> </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+            <div class="blog-post box">
+                <img src="../Gun22/icerik2.png" alt="">
+                <div class="blok-post-icerik p20">
+                    <h2 class="icerik-title">
+                        <a href="">1.içerik</a>
+                    </h2>
+                    <p class="date">31.12.2020</p>
+
+                    <p class="blog-text ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, voluptatum eaque vel ipsam dolores at.
+                        Nihil delectus fugiat quos magnam incidunt iusto est ex alias, laudantium vel veritatis eum
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, voluptatum eaque vel ipsam dolores at.
+                        Nihil delectus fugiat quos magnam incidunt iusto est ex alias, laudantium vel veritatis eum ut.
+                    </p>
+                    <ul class="kaynak ">
+                        <li><a href="">Html5</a> </li>
+                        <li><a href="">Angular</a> </li>
+                        <li><a href="">java</a> </li>
+                        <li><a href="">css</a> </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div id="others-post-menu">
+            <!--%25 lik kısım.-->
+            <div id="inner-others-post-menu" class="box p20">
+                <!--menu kısmının zeminini  bağımsız hale getirdik.-->
+
+                <h4>popular post</h4>
+                <ul>
+                    <li>
+                        <a href="" id="menu-link">
+                            <i class="fas fa-code fa-sx"></i>
+                            Yazılım
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="" id="menu-link">
+                            <i class="fas fa-address-book fa-sx"></i>
+                            Farkındalık
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="" id="menu-link">
+                            <i class="fas fa-caret-square-right fa-sx"></i>
+                            Ses Video
+                        </a>
+
+                    </li>
+
+                </ul>
+                
+
+
+            </div>
+            <div id="hesaplarım" class="boxa p20 box">
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+
+           
+
+        </div>
+        <div style="clear: both;"></div>
+
+        <!--yazar kısmının other post ile karışmasını önledik. Divlerin iç içe geçmesini önlemiş olduk.-->
+        <div id="yazar">
+            <img src="../Gun17/rcp.jpg" alt="Resme ulaşılamıyor">
+            <p class="yazar_isim">
+                Recep ALTUN
+                
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

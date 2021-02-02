@@ -1,0 +1,259 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(214, 209, 209);
+}
+.cerceve{/*En Dıştakı sabit enişlikteki çerçevemiz.*/
+    width: 1000px;
+    /*background-color:rgb(14, 130, 165);*/
+    margin: 50px;
+    margin:0px auto;
+   
+   
+}
+
+
+#blog-post-icerik{/*Sayfamızın %75 lik ksımı.*/
+    width: 75%;
+    /*background-color: rosybrown;*/
+    float: left;
+    
+   
+    
+    
+}
+.box{
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 2px rgba(20, 23, 20, 0.20);
+    
+
+}.blog-post img{
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition:opacity 1s ease;
+    
+}.blog-post img:hover{
+    opacity: 0.6;
+    cursor: pointer;/*maus resmin üzerine geldiğinde maus şekli el haline gelsim.*/
+}
+
+.p20{
+    padding: 20px;
+}
+.mrn20{
+    margin-top: 20px;
+}
+.icerik-title{
+    font-weight: 700;
+}
+.icerik-title a{
+    color: #444;
+    text-decoration: none;
+    transform: color 3s;
+}.icerik-title a:hover{
+    color: #da4453;
+}
+
+#others-post-menu{/*Sayfamızın /25 lik kısmı.*/
+    width: 25%;
+    /*background-color: rgb(211, 181, 14);*/
+    float: left;
+    padding-left:20px; /*box-sizing: border-box; özelliği border ve paddingler için geçerli*/
+    /*right: 50px; ______bu kodu kaldırırsak menu kısmı sağa kayıyor 
+    işte bu alanı %25 lik kısımda saitlemek istiyorsak içinde bir div oluşturmamız gerekli biz zaten oluşturduk.*/
+    
+  
+
+}
+#inner-others-post-menu{
+    position:fixed;
+   
+  
+    
+   
+}
+#yazar{
+    border-top: 1px solid rgb(0, 0, 0,.125);
+    padding-bottom: 10px;
+
+    
+}
+#yazar img{
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    float: left;/*Sola doğru hizaladık.*/
+   
+    
+}
+.yazar_isim{
+    float:left;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+/*
+.kaynak li{ Hizalama işlemini flat ile yapmış olsaydık.
+    2. blok post içerikle iç içe gececekti ve clear olayını yapmak zorunda kalacaktık. 
+   float: left; 
+   list-style: none;*/
+
+
+.kaynak li{ 
+    /*Hizalama işlemini display ile yaparsam 
+     clear olayını yapmama gerek kalmayacak 2. Blok port içerik ile karışmamış olacak. */
+   list-style: none;
+   display:inline-block; 
+   width: 90px;/*inline blok yaptığımız için genişlik ve yüksekliklerini de ayarlayabiliriz.*/
+  /* font-weight: bold;*/
+   margin-top: 20px;
+   /*Daha fazla düzenleme yapmak için*/
+   background-color: #dd4453;
+   text-align: center;
+   padding: 1px;
+   border-radius: 5px;
+   cursor: pointer;
+   border:2px solid transparent;
+   text-transform:uppercase;/*harfler büyük harfe çevrildi.*/
+   color:#fff;
+   transition: background 1s ease;
+   font-size: 12px;
+
+   
+
+   
+}
+
+ .kaynak li:hover{
+    background-color:#363636 ;
+    border-color: #363636;
+}
+.kaynak{/*listemizin boşluklarını sıfırlayarak sola doğru yaslanmasını sağladık. */
+    margin: 0px; 
+    padding: 0px;
+    
+}
+.kaynak li a{
+    text-decoration: none;
+    color: #fff;
+    
+    
+
+}
+.date{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+
+}
+
+.blog-post{
+    position: relative;
+}
+.box img{
+    margin-bottom: 20px;
+    
+    width: 100%;/*divin içine sığmasını sağladık.*/
+}
+.box h2{
+    margin-bottom: 20px;
+    text-transform:uppercase;
+}
+h2{
+    font-family: 'Encode Sans', sans-serif;
+    color:#566e81;
+
+}
+.blog-text{
+    text-indent: 20px;
+    line-height: 25px;
+}
+#inner-others-post-menu ul{
+   list-style-type: none;
+   padding: 5px;
+
+    
+}#inner-others-post-menu ul li{
+   padding: 10px 0px;
+}
+#inner-others-post-menu ul li i{
+    margin-right: 10px;
+}
+h4{
+    border-bottom: 2px solid rgb(0, 0, 0,.125);
+    padding: 10px;
+    color:#566e81;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#menu-link{
+    text-decoration: none;
+    color:#007bff;
+}
+#hesaplarım{
+    width:188px;
+    position: fixed;
+    margin:220px 0px; 
+    
+    
+}#hesaplarım a{
+    color:#070b0e;
+    padding-left: 15px;
+    opacity: 0.7;
+}#hesaplarım a:hover{
+    color: #c94242;
+}
+
+.boxa{
+    
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    background-color: white;
+    padding-left: 20px;
+    
+    
+    
+    
+   
+}
+
+/*nav-bar*/
+
+#nav{
+    background-color: rgb(27, 26, 26);
+}
+#nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+#nav li{
+    float: left;
+    
+}
+#nav ul li a{
+    display:inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+#nav li:hover{
+    background-color:black;
+    transition:background 0.3s ;
+}
+.Article{
+    background-color: #dd4453;
+
+}
