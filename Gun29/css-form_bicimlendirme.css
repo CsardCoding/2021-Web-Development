@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    text-transform: uppercase;
+    font-family: 'Architects Daughter', cursive;
+}
+/*input tipi text olanları texteare olanları ve selct olanı sectik
+        Asağıdaki alan tüm formlarımz için kullanabileceğimiz şekilde kalsın
+         ve biz her bir form nesnesini div içine alalımargin: NaNem; 
+         asağıdaki gibi yaomak yerine direk form-control clasına değişiklikleri ygularız ve kullanaccağımızda 
+         ilgili etikete bunu klas olarak atarız
+         _____________________________________________
+        input[type="text"],textarea, select {
+            width: 100%;
+            padding: 7px 12px;
+            border: 2px solid rgb(179, 175, 175);
+            border-radius: 5px;
+        ________________________________________________
+        }*/
+
+.forms-kontrol{
+    width: 100%;
+    border: 1px solid ;
+    padding: 7px 12px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+}
+.forms-kontrol:focus{/*üzerine tıklandığında*/
+    border: 2px solid #80bdff;
+    outline: 0;/*kontrol'un etrafındaki çerçeveyi sıfırladık.*/
+}
+.forms{
+    width: 640px;
+    margin:20px auto;
+    margin-top: 10px;
+    border-radius: 8px;
+
+}
+.mail-form{
+    margin-bottom: 5px;/*form elemnaları arasına asağıdan 8px lik boşluk braktık.*/
+}
+label{
+    display:inline-block; /*Label etiketleri varsayılan olaran inline etiket olduğu için margin değeri
+     veremeyeceğimiz için inline-blok yaptık.*/
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.btn{
+    padding:6px 12px ;
+    border-radius: 6px;
+    color:#fff;
+    background-color: #007bff;
+    border:1px solid #007bff;
+    outline: 0;  /*kontrol cercevesinin rengiini sıfırladım ki verdiğim mavi rengi görünür yapayım*/
+    text-transform: uppercase;/*yazıların tamamını büyük yaptık.*/
+
+}.btn:hover{
+    background-color: #0069d9;
+    border:1px solid #0062cc;
+
+}.form-25{
+    float: left;
+    width: 25%;
+
+}.form-75{
+    float: left;
+    width: 75%;
+    margin-bottom: 5px;
+    padding-left: 0px;
+}
+.clearfix::after{
+    content:unset;
+    display:block;
+    clear: both;
+}
+#form_2{
+    background:#f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+}
+/*_______________________Hata sorgulamaları ve yapılacakalr___________
+javascrip ile sorgulama yaptırdığımızda çalıır hale gelecek*/
+.is-success{  
+    border-color: red;
+}
+.is-error{
+    border-color: yellow;
+}
+.is-wqrning{
+    border-color: orange;
+}
+
+
+
+
+
+
+
+

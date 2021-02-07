@@ -1,0 +1,97 @@
+body{
+    margin:100px;
+    font-family: 'Architects Daughter', cursive;
+}
+.border{
+    border:1px solid rgba(133, 115, 115, 0.24);
+    padding: 10px;
+    margin-right: 30px;
+}.tooltip .text{
+    display: none; /*Gizledik*/
+    width: 120px;
+    color:#fff;
+    background: #80bdff;
+    text-align: center;
+    border-radius: 5px;
+    padding:5px 5px;
+    z-index: 10;/*derinliğini ayarladık ön plana cıkmasını sağladık*/
+    /*mesajın nerede acılacağını belirliyoruz asağıda*/
+
+}.tooltip{
+    position: relative;
+    
+}
+.tooltip:hover .text{
+    display: inline-block;
+    position: absolute;
+   
+}.top{
+    bottom:120%;
+    left:50%;
+    margin-left: -60px;
+}.bottom{
+    top:120%;
+    left:50%;
+    margin-left: -60px;
+
+}.left{
+    right: 120%;
+    bottom: 5px;
+    
+
+}
+.right{
+    left: 120%;
+    bottom: 5px;
+}
+/* ok işareti çıkarma*/
+.top::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left:50%;
+    margin-left: -5px;
+    border-width:5px;
+    border-style: solid;
+    border-color: #80bdff transparent  transparent transparent; /*Saat yönüde*/
+    
+    
+}
+.bottom::after{
+    content: "";
+    position: absolute;
+    bottom:100%;
+    right: 50%; /*sağdan yada soldan farketmez.*/
+    border-width:5px;/*okun genişliğini ayarladık.*/
+    border-style: solid;
+    border-color: transparent  transparent #80bdff transparent; /*Saat yönüde*/
+    
+    
+}
+.left::after{
+    content: "";
+    position: absolute;
+    top:50%; /*üstten yada alttan fark etmez.*/
+    left:100%;
+    margin-top: -5px;
+    border-width:5px;
+    border-style: solid;
+    border-color: transparent    transparent  transparent #80bdff; /*Saat yönüde*/
+    
+    
+}
+    
+    
+
+.right::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    right:100%;
+    margin-top: -5px;
+    border-width:5px;
+    border-style: solid;
+    border-color: transparent  #80bdff  transparent  transparent ; /*Saat yönüde*/
+    
+    
+}
