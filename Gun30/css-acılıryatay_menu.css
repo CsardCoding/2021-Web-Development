@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(214, 209, 209);
+    
+}
+.menu{
+    width: 1140px;
+    margin: 20px auto;
+}
+ul{
+    list-style: none;
+    position: absolute;
+   
+    
+}
+li{
+    display: inline-block;
+    float: left;/*inline-blok yapınca aradakki bolşukları kaldırmaak için*/
+    margin-right: 1px;
+}
+ li a{
+    display: block;
+    background: #80bdff;
+    color:#fff;
+    text-decoration: none;
+    height:30px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+
+}
+li a:hover{
+    background: grey;
+}
+ul li ul{
+    background-color:#2c3e50;
+    display:none;
+    position:absolute;
+    width:100px;
+}
+ul li:hover ul {
+    display: block;
+}
+li:hover ul a{
+    background: rgb(226, 146, 146);
+    height: 25px;
+    line-height: 25px;
+    
+}
+li:hover ul a:hover{
+    background: grey;
+}li ul li{
+    display: block;
+    float:none;
+}
+li ul li a{
+    text-align: left;
+    min-width: 300px;
+    
+}
+li:hover a{
+    background: grey;
+
+}
+
+ul li:hover + .menu-2, menu-2:hover{/*menu-2 elemanından önceki ilk a hover olduğunda*/
+    display: block;
+}
