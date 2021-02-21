@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;/*pading ve border değerlerini sayfa genişlik ve yüksekliğine dahiil ettik.*/
+}
+#gallery{
+    /*width: 1200px;sabit genişlik verdik*/
+    margin:20px auto; /*üstten alttan 20px boşluk bırak sag sol ortala*/
+
+}.item-cerceve{
+    width: 25%;/*içerisinde bulunduğu divin %25 ini kaplamasını söyledik.*/
+    float: left;/*resimlerin yan yana görünmesini sağladık.*/
+    padding: 5px;
+}
+.gallery-itms{
+    border: 1px solid #ccc;/*border geldiği için 100% + bordurlardan gelen kanarlıklar ve %100 u geçiyor. taşmalar oluyor.*/
+    
+}
+.gallery-itms:hover{
+    cursor: pointer;
+    border:1px solid #777
+}
+.gallery-itms img{
+    width: 100%;/*içerisinde bulunduğu divin %100 unu kaplamasını söyledik.*/
+    height: 200px; /*Resmin yüksekliğini sabitledik*/
+    object-fit:cover;/*en boy oranı korundu resmin orjinalliği bozulmadı. resmin tamamınıda cerceveye sığdırmadı.*/
+    object-fit:fill;/*varsayılan degeridir her türlü cerceveye sığdırır.  resim ölçülerde de korunma olmaz.*/
+    object-fit:contain;/*resmi olduğu gibi çerceveye sığdırır.*/
+    object-fit:none;/*resm cerceveye sığdırılmaya çalışılmıyor resmin çerceveye sığacak kadarı gösteriliyor.*/
+    object-fit:none;/*resm cerceveye sığdırılmaya çalışılmıyor resmin çerceveye sığacak kadarı gösteriliyor.
+    bunu seçtiğimizde resmin gösterilecek kısmın pozisyonuylada oynama fırsatımız olur. 
+    object-position: bottom;__ resmin alt kısmını göstermiş odu*/
+    object-position: bottom;
+    object-position: 50% 50%;
+
+
+}
+.description-img{
+    text-align:center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/*En boy oranları farklı resimler olursa ne olacak?
+ html dosyamızdaki img  etiketine sabit yükseklik ve genişlk verebiliriz.
+ Resmi oluşturduğumuz en boy oranına göre sıgdırmaya çalışacağız,
+  ve bu işlemi görüntüyü bozmadan yapmak lazım. */
+
+
+  /*__________________________Resim galerimizi Responsive Tasarımla birleştirdik_______________*/
+  @media screen and (max-width:900px){
+    .item-cerceve{
+        width: 33.33%;
+    }
+  }
+  @media screen and (max-width:700px){
+    .item-cerceve{
+        width: 50%;
+    }
+  }
+  @media screen and (max-width:400px){
+    .item-cerceve{
+        width: 100%;
+    }
+  }

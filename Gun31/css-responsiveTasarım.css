@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+    color:green;
+   
+}
+
+@media screen and (max-width:700px){
+        h1{
+            font-size: 16px;
+            color: red;
+        }
+
+}
+@media screen and (max-width:400px){
+    h1{
+        font-size: 12px;
+        color:rgb(0, 26, 255);
+    }
+}
+
+.box{
+    width: 25%;
+    height: 200px;
+    background-color: gray;
+    border: 1px solid black;
+    float: left;
+}
+@media screen and (max-width:700px){
+    .box{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    .box{
+        width: 100%;
+    }
+    
+}

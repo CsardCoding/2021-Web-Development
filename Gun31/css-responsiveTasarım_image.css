@@ -1,0 +1,6 @@
+img{
+    max-width:100%;/*Resin orjinal boyutuna geldiği zaman daha fazla büyütme dedik.
+    (max-) dememiş olsaydık sayfa büyüdükçe resmimizde büyüyecekti ve orjinalliği bozulacaktı.*/
+    height: auto;/*Yüksekliğini otomatik ayarladık.*/
+    
+}
