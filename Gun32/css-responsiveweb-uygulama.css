@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Truculenta', sans-serif;
+    font-size: 1.6rem;/*html etiketi içindeki font büyüklüğüne göre orantısal ayarlama yaptık.
+    bu 16px e karşılık gelmekttedir.*/
+    line-height: 1.6;/*Satır yüksekliğini ayarladık.*/
+    text-align: center;
+    background: #333;
+    color: #fff;
+
+}
+
+html{/*html etiketini hedef alarak başka yerlerde font-size i ezdiğimizde, html etiketi içine verdiğimiz
+    font-size a orantısal olarak büyüklük ayarlayabileceğiz. burda (rem) tegini kullanacağız.*/
+    font-size: 15px;/*Eğer burada değişiklik yapar ve 7px e düşürürsek sayfamızdaki diğer
+     font büyüklükleri buna bağlı olduğu için %30 oranında azalacaktır.*/
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding:1.6rem 0;
+}
+
+
+
+/*________________________Header e özgü kondlamalar____________________*/
+header{
+    height: 20rem;/*150px e karşılık gelmektedir.*/
+    
+}
+header .bg-image{
+    position: absolute;/*Normal akışın dışına çıktı*/
+    height: 20rem;
+    width: 100%;
+    background-image:url(../Gun32/icerik.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;/*Yazıların saydamlığını kaldırdık.*/
+}
+header h1{
+    padding-top:2rem;
+    padding-bottom: 0;
+
+}
+
+/*____________________________________________________________________________________*/
+.buton{
+    color: #fff;
+    background-color: #333;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+
+    -webkit-transition:background-color .3s ease-in ;
+    -moz-transition:background-color .3s ease-in ;
+     transition: background-color .3s ease-in;
+    /*transition: all 0.5s;2 tane özelliğin süresini belirttiğim için all dedim*/
+    
+   
+}.buton:hover{
+    background-color: rgb(231, 220, 220);
+    color:#333;
+
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*section-a*/
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding:3.2rem 0;
+
+}
+/*section-b*/
+#section-b{
+    padding:2rem;
+}
+#section-b ul{
+    list-style: none;
+}
+#section-b li{
+    background-color: #fff;
+    color: #333;
+}
+.section-b .col .col-content{
+    padding:1rem;
+}
+
+/*section-c*/
+#section-c{
+    background-color: #fff;
+    color:#333;
+    padding:5rem;
+}
+
+/*section-d*/
+#section-d .box{
+    padding:1rem;
+    font-size: 1rem;
+}
+#section-d .box:first-child{ /*section-d nin altındaki box lardan ilkini seçtik.*/
+    background-color: #79aae2;
+
+}
+
+
+/*Footer*/
+footer{
+    padding:3rem;
+    background-color: #000;
+    font-size: 1.2rem;
+}
+footer a{
+    color:#79aae2;
+}
+/*_____________clear işlemi uyguladık.
+.clear-fix{
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #section-b li{
+        display: inline-block;
+        width: 28%;
+        margin:1%;
+    }
+    .box{
+        width: 50%;
+        float: left;
+        
+    }
+    html{
+        font-size: 10px;
+    }
+
+}
