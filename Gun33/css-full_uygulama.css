@@ -1,0 +1,475 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 6px;/*orantısal olarak sayfadaki tüm fontları ayarlama imkanını oluşturduk.*/
+}
+body{
+    font-family: 'Lato',sans-serif; /*yazı fontunu taanımladık.*/
+    font-size: 1.6rem; /*orantısal olarak font büyüklüğü belirledik.*/
+    font-weight: 400;/*Yazı tipi ağırlığını-vurgusunu belirledik.*/
+    line-height: 1.5;/*Satırlar arası mesafeyi belirledik.*/
+    background-color: #fff;/*Arka plan rengi atadık.*/
+}
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+.text-uppercase{/*her yerde kullanabileceğimiz büyük yazı sınıfı.*/
+    text-transform: uppercase;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;/*tüm a etiketlerinin özelliğini none yaptık*/
+}
+.col{
+    
+    float: left;/*col divlerini yan yana dizdik.*/
+    width: 100%;/* sayfayı tasarlama aşamasında 33.33 vermiştm.col divlerinin bir satırda kaç tane olacağını belirledik. sayfa tasarımım tamamen bitince sayfamı responsive uyarlamak için 100% yapıyorum.*/
+    padding:1px;/*sayfayı tasarlama aşamasında 10px vermiştm. col divleri arasında boşluk oluşturduk. sayfa tasarımım tamamen bitince sayfamı responsive uyarlamak için 1px yapıyorum.*/
+    
+    
+    
+}
+.container{
+    width: 100%;/*önce 1140px container a sabit bir genişlik verdik. Sayfa tasarımım bitince Responsive yapmak için 100% değerini verdim. uygulamada scroolbar cıkmasın diye yaptık.*/
+    margin-left:auto;/*Container ımızı sağdan ortaladık*/
+    margin-right: auto;/*Container ımızı soldan ortaladık*/
+    padding-left:0.5rem;/*sapdan 5px lik bşluk verdik*/
+    padding-right:0.5rem;/*soldan 5px lik bşluk verdik*/
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540;
+    }
+    html{
+        font-size: 7px;
+    }
+    
+    
+
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720;
+    }
+    html{
+        font-size: 8px;
+    }
+    .col{
+        width:50%;
+    }
+}
+@media (min-width: 922px){
+    .container{
+        max-width: 960;
+    }
+    html{
+        font-size: 9px;
+    }
+    .col{
+        width:33.33%;
+    }
+    
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140;
+    }
+    html{
+        font-size: 10px;
+    }
+    
+    
+}
+.clearefix::after{ /*listemizi sola yasladık ve görüntünün düzelmesi için clearefix işlemini yaptık.*/
+    content: "";
+    display: block;
+    clear: both;
+
+}ul{
+    list-style-type: none;/*liste sitilimizi none yaptık, stili yok ettik.*/
+}
+.img-fluit{/*responsive olarak ayarladım.*/
+    width: 100%;
+    height: 200px;/*yükseklik verdik.*/
+    object-fit:cover;/*en boy oranı korundu resmin orjinalliği bozulmadı. resmin tamamınıda cerceveye sığdırmadı.*/
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    font-family: Montserrat;/*font türünü belirledik.*/
+}.btn-large{
+    font-size: 2rem;/*buton üzerindeki yazımın büyüklüğünü ayarladım.*/
+    margin-top: 4rem;/*Yukardaki eleman ile arasına boşluk oluşturduk.*/
+}
+.btn{
+    
+    font-weight: 400;/*buto üzerindeki yazımın vurgusunu ayarladım.*/
+    display: inline-block;/*butonumun pazisyonuile oynayacağım için inline blok yaptım.*/
+    border:2px solid transparent;/*sayfadaki butonun border rengi değiişeceği için transparant yaptım
+    yani farklılık olacağı için bunu yaptık.*/
+    border-radius: 0.4rem;/*Butonuma radius verdim.*/
+    cursor: pointer;/*farenin şeklini ayarladık.*/
+    transition: all .5s;/* tüm butonlar için hover olayında gerçekleşme süresini belirledik.*/
+
+}
+
+
+
+/*navbar_________________________________________________________________________________________*/
+nav{
+    width: 100%;/*position:Fixed dediğmizde satırın tamamını kaplamadığı için bu kodla satırı kaplamasını sağladık.*/
+    font-family: Montserrat;/*font türünü belirledik.*/
+    background-color: #29303B;/*arka plan rengini belirledik.*/
+    color:#fff;/*yazı rengini belirledik.*/
+    padding-top: 2.4rem;/*üstten 29px lik bir boşluk verdik.*/
+    padding-bottom: 2.4rem;/*alttan 29px lik bir boşluk verdik.*/
+    position:fixed;
+    z-index: 500;/*içerikte ikon sayfayı küçültünce navbarın üstüne geliyordu bu sorunu çözmek için
+     rasgee yüksek bir değer verdik ki içerikteki herhangi bir alan navbar arkasında görünmesin.
+     buraya bir z-index değeri atamaz isen varsayılan değeri 1 dir, buda sıkıntı çıkartır.*/
+
+
+}
+
+#logo-box{
+    float:left;/*sağa yasladık.*/
+    padding-top:.5rem;/*yukardan 5px lik boşluk verdik.*/
+}
+
+#logo-box .logo{
+    color:#fff;/*yazı rengini belirledik.*/
+    font-weight: 700;/*Yazı tipi ağırlığını-(vurgusunu) belirledik.*/
+    font-size: 3.2rem;/*Font büyüklüğünü 32px yaptık orantısal olarak.*/
+    
+   
+}    
+
+#nav-links{
+    float: right;/*Listemizi sola yasladık.*/
+    
+}#nav-links .nav-ıtems{
+    margin: 0.8rem;/*herbir liste elemanının sağından 8px lik boşluk verdik. */
+    float: left;/*liste elamanlarımızı sağa yazladık ve yan yana gelmesini sağladık.*/
+}#nav-links .nav-link{
+    color: #fff;/*liste elemanı olan a etiketlerinin yazı rengini değiştirdik.*/
+    font-size:1.6rem;/*liste elemanı olan a etiketlerinin yazı büyüklüğünü değiştirdik.*/
+    font-weight: 700;/*liste elemanı olan a etiketlerinin yazı vurgusunu değiştirdik.*/
+    display: block;/*liste elemanı olan a etiketlerine padding değeri için blok hale getirdik.*/
+    padding:1.6rem;/*/*liste elemanı olan a etiketlerine her köşeden padding değeri atadık yani boşluk verdik.*/
+    letter-spacing: .1rem;/*harfler arası mesafeyi ayarladık orantısal olarak.*/
+    transition: color .3s;/*hover olayında gerceklesen yazı rengi değişiminin süresini belirledik.*/
+    
+}#nav-links .nav-link:hover{
+    color:#0AAA9D;/*/*liste elemanı olan a etiketlerinin üzerine gelindiğinde renginin nasıl olacağını belirledik.*/
+
+}
+
+#nav-links .nav-icon{
+    display: none;/*Sayfa Büyük iken görünmemesini sağladık.*/
+}
+@media (max-width: 992px){
+    #logo-box{
+        float: none;/*Float ile verdiğimiz konumu yok saymasını istedik*/
+    }
+    /*html sayfamda #nav-link e bir tane klas ekleyeceğim yeni bir clas olacak (ismi responsive)
+    #nav-links bu responsive clasına sahipse display:none kodu etkin olacak. değilsede etkin olmayacak.
+    Bunu sağlamak için (#nav-links.responsive li:not(:first-child)) kodunu yazdım.
+    buradaki gibi bitişik yazarsan responsive sınıfına sahip olan #nav-links demektik.*/
+    #nav-links.responsive li:not(:first-child){/*nav-linksin altındaki li lerdenn sadece ilk elemanı işin içinden çıkartıyorum.
+        yani ilk eleman hariç bütün li elemanlarını display:none ile işin içinden çıkartıyorum (yok ediyorum)*/
+        display: none;
+    }
+    #nav-links li :not(:first-child){/*nav-linksin altındaki li lerdenn sadece ilk elemanı işin içinden çıkartıyorum.
+        yani ilk eleman hariç bütün li elemanlarını display:none ile işin içinden çıkartıyorum ()*/
+        display: none;
+    }
+    #nav-links{
+        float: none;/*Float ile verdiğimiz konumu yok saymasını istedik*/
+    }
+    
+    #nav-links .nav-ıtems{
+        float: none;/*Float ile verdiğimiz konumu yok saymasını istedik*/
+        text-align: left; /*liste elemanlarımızı sola yasladık.*/
+    }
+    #nav-links .nav-link{
+        font-size: 2rem;/*liste elemanlarımızın yazı büyüklüğünü ayarladık.*/
+        padding-left: 0;/*liste elemanlarımızdaki solda oluştuduğumuz pading değerni sıfırladık.*/
+    }
+    #nav-links .nav-icon{/*nav-icon u grünür yapacağım ve en sağa alacağım.*/
+        display: block;/*blok haline getirdim.*/
+        position:absolute;/*pozisyonu ile oynayacağım için absolite yaptım*/
+        top:10px;/*yukardan 10px lik boşluk verdim.*/
+        right:5px;/*sağdan 5px lik boşluk verdim.*/
+        font-size: 3rem;/*ikonun büyüklüğünü ayarladım. */
+
+    }
+    }
+
+
+
+/*header___________________________________________________________________________*/
+
+header{
+    background-color: #0AAA9D;
+    /*height: 800px;görünür olsun diye 800px yükseklik verdik. içeriği eklediği için bunu kaldırdım.*/
+    padding-top:calc(104px + 10rem); /*navbarın yüksekliğne baktık buraya onun yüksekliğini verdik. bunu yapmaz isek 
+    header içnde oluşturacağımız içeriklerimiz navbarın arkasında  görünüyor.
+    bu kodu yazarak header içeriğinin navbardan hemen sonra başlamasını sağladık.
+    104px i merkez alarak 100px daha aşağıdan başladı calc(104px + 10rem) bu kod sayesinde.*/
+    padding-bottom: 104px;
+    text-align: center;
+}
+header #profile-img{
+    width: 20rem;
+    border-radius: 80rem;
+}
+header h1{
+    color: #fff;
+    font-size: 7.2rem;
+}
+/*_________________star-light ve star-dark ın farklı olan özelliklerini ayıracağız.*/
+hr.star-light{
+    border-color: #fff;
+
+}
+hr.star-dark{
+    border-color:#2B3C53;
+}
+/*__________________________________________________________________________________*/
+
+.star-light,.star-dark{
+    border:none;
+    /*padding:0.2rem;___borderları görebilmek için pading değeri atadım. border none dediğim içinde bunun aktifliğini kaldırdım.*/
+    border-top:.5rem solid;/*renk ataması değişken olduğu için bunu yukarda tanımadık.*/
+    width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;/*Yıldızı hr çizgimizin içine sığdırıp ön plana çıkardık.*/
+    height: 0;/*h2 ile ola boşluğu gidermek için kullandım.*/
+}
+
+
+/*__________________star-light ve star-dark ın farklı olan özelliklerini ayıracağız.*/
+.star-light::after{
+    color: #fff;/*ikonumuza ren ataması yaptık.*/
+    background-color: #0AAA9D;/*hr çizgisinin tam ortasındaymış gibi yani iki çizgi varmışta ortasındaymış görüntüsü oluşturmak için ikonumuza arka plan rengi atadık.*/
+
+}
+.star-dark::after{
+    color:#2B3C53;
+    background-color: #fff;/*hr çizgisinin tam ortasındaymış gibi yani iki çizgi varmışta ortasındaymış görüntüsü oluşturmak için ikonumuza arka plan rengi atadık.*/
+}
+/*__________________________________________________________________________________*/
+
+
+
+.star-light::after, .star-dark::after{
+    content: "\f005"; /*ikonumuzun unikod karşılığı ile sayfamıza ekledik */
+    font-family:"Font Awesome 5 Free";/*ikodnu unikod karşılığ ile eklemek için grekli sınıfını verdik.*/
+    
+    font-weight: 900;/*ackground ile arkasını beyaz yaomadık o yüzden ikonun içini doldurma işlemi yaptık.*/
+    font-size: 3.2rem;/*ikonumuzun orantısal olarak büyüklüğünü ayarladık. */
+    position:relative;/*olduğu konumda itibaren bir konumalandırma yapacaksak relative kullanırız.*/
+    top: -2.6rem;/*yıldızı çizginin üzerine kaydırdık ama taşma olduğu için yıldız tam görünmüyor bunun için;
+    sığdıracağımız yere gidip overflow:visible diyoruz.*/
+    
+    padding: 0 1rem;/*üstten alttan sıfır sağda ve soldan 10px mesafe atayarak çizgileri ikondan uzaklaştırdık.*/
+
+}header h2{
+    color: #fff;
+    font-family:'Lato';
+    font-weight: 300;
+}
+
+/*porfolio___________________________________________________________________*/
+
+#Portfolio{
+    /*height: 600px;_ kapsadığı alanı görmek için bunu vermiştim. işe yaramaz ve aktifliğini kaldırdım.*/
+    /*background: red;___kapsadığı alanı görmek için geçiçi olarak renk ataması yaptık.*/
+   
+
+    
+}#Portfolio h2{
+    font-size: 4.2rem;
+    color: #2B3C53;
+}.portfolio-item{/*ikon konumlandırmasını buna göre yapacağız.*/
+    position: relative;/*ikon konumlandırması yapabilek için relative değerini verdik.*/
+   
+}
+.portfolio-item img{
+    display: inline-block;/*??????*/
+    
+}
+.img-overlay{
+    position: absolute;/*bağımsız hale getirip relativ ile pozisyonunu ayarladık.*/
+    top:0; /*üzerine gelindiğinde arka planda görünecek rengi ve ikonun konum ayarını yaptık.*/
+    left: 0;/*üzerine gelindiğinde arka planda görünecek rengi ve ikonun konum ayarını yaptık.*/
+    width: 100%;/*üzerine gelindiğinde arka planda renginin ve ikonun portfolio-item divini kaplamasını istedik.*/
+    height: 100%;/*üzerine gelindiğinde arka planda renginin ve ikonun portfolio-item divini kaplamasını istedik.*/
+    background-color: #0AAA9D;/*arka plan resmi atadık.*/
+    opacity: 0; /*resmin görünürlüğünü ayarladık.*/
+    transition: opacity .4s ease;/*hover olduğunda opasity değerinin süresini ayarladık.*/
+
+}
+.img-overlay .icon{
+    color:#fff;/*icon rengini beyaz yaptık.*/
+    font-size: 10rem;/*icon büyüklüğünü ayarladık.*/
+    position: absolute;/*ikonu bağımsız yaptk konumunu ayarlamak için.*/
+    top:50%;/*ikonun konumunu verdik.*/
+    left:50%;/*ikonun konumunu verdik.*/
+    transform:translate(-50%, -50%);/*iconun kendi genişliğini konumlandırdık.*/
+}
+.portfolio-item:hover .img-overlay{
+    opacity: 0.8;/*üzerine gelindiğinde arka plan renginiin ön plana çıkmasını sağladık.*/
+}
+
+/*about___________________________________________________________________*/
+#about{
+    /* height: 600px;__kapsadığı alanı görebilmek için öylesine bir yükseklik değeri verdim. tasarım bitince kaldırdım.*/
+    background:#0AAA9D ;
+    color:#fff;
+}
+#about h2{
+    font-size: 4.8rem;/*font büyüklüğünü ayarladık.*/
+} 
+.about-text{
+    text-align: left;/*yazımızı saya yasladık.*/
+    
+}
+.about-text .left{
+    float: none;/*sağa yasladık konumunu ayarladık. sayfayı tasarlarken left ti burası responsive uyarlarken none yaptık.*/
+    width: 100%;/*satırın %50 sini kapsa  maısnı istedik. sayfa tasarım yaparken burası %50 idi responsive uyarlarken 100%yaptık.*/
+    padding-right: 5px;/*sağdan 20px boşluk verdik.sayfa tasarımı yaparken 2rem di responsive uyarlarken 5px yaptım.*/
+    padding-left: 5px;/*saldan 230px lik boşluk verdik.*/
+}
+.about-text .right{
+    float: none;/*sola yasladık konumunu ayarladık.sayfayı tasarlarken left ti burası responsive uyarlarken none yaptık.*/
+    width: 100%;/*satırın %50 sini kapsamaısnı istedik. sayfa tasarım yaparken burası %50 idi responsive uyarlarken 100%yaptık.*/
+    padding-left: 5px;/*soldan 20px boşluk verdik.sayfa tasarımı yaparken 2rem di responsive uyarlarken 5px yaptım.*/
+    padding-right: 5px;/*sağda 230px lik boşluk verdik.*/
+
+}
+@media (min-width: 922px){
+    .about-text .left{
+        float: left;/*sağa yasladık konumunu ayarladık.*/
+        width: 50%;/*satırın %50 sini kapsa  maısnı istedik.*/
+        padding-right: 2rem;/*sağdan 20px boşluk verdik.*/
+        padding-left: 23rem;/*saldan 230px lik boşluk verdik.*/
+    }
+    .about-text .right{
+        float:right;/*sola yasladık konumunu ayarladık.*/
+        width: 50%;/*satırın %50 sini kapsamaısnı istedik. */
+        padding-left: 5rem;/*soldan 20px boşluk verdik.*/
+        padding-right: 23rem;/*sağda 230px lik boşluk verdik.*/
+    }
+
+}
+
+
+.about-text .text{
+    font-size: 2rem;/*yazımızın fontunu ayarladık.*/
+}
+
+.btn-outline{
+    color:#fff;
+    border-color:#fff;
+    background-color: transparent;
+    padding: 2.8rem 1.6rem;
+}
+.btn-outline:hover{
+    color:black;
+    background-color: #fff;
+}
+    
+.btn-primary{
+    color:black;
+    background-color: #0AAA9D;
+    border-color:#0AAA9D;
+    padding: 1.2rem .7rem;
+
+
+}.btn-primary:hover{
+    color:#fff;
+    background-color: #128f76;
+    border-color:#128f76 ;
+}
+/*contact___________________________________________________________________*/
+
+
+#contact h2{
+    font-size: 4.2rem;
+    color: #2B3C53;
+    
+}
+#contact-form{
+    width: 70%;/*Form elemanlarını sayfanın %70 ini kaplamasını istedik.*/
+    margin:0 auto;/*Form elemanlarının yukardan asağıdan 0px ve sağdan soldan sayfayı ortalamasını istedim.*/
+    text-align: left;/* Form elemanlarını sağa yasladık.*/
+    
+    
+}
+.form-group{
+   border-bottom:1px solid rgb(170, 167, 167);/*Form elemanlarının altıa cizgi ekledik.*/
+   padding-bottom: 2rem;/*Fotm elemanları ve alt çizgi arasında Alttan 20px lik boşluk braktık.*/
+   margin-bottom:4rem;/*form elemanları arasında alttan 40px boşluk braktık.*/
+   
+}
+.form-group input, .form-group textarea{
+    border:none;/*Form elemanlarının çecevelerini yok ettik.*/
+    display:block;/*blok haline getirdik.*/
+    width:100%;
+    font-size: 2rem;/*Yazı büyüklüğünü ayarladık.*/
+}
+.form-group input:focus{
+    outline: 0; /*fokus olduğunda çıkan border (çerçeveleri) yok ettik.*/
+}
+
+
+/*Footer_______________________________________________________________*/
+footer{
+   
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #29303B;
+    color:#fff;
+    text-align: center;
+}
+footer h4{
+    font-size: 2.4rem;
+
+}
+footer p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding:0;
+    font-size: 2rem;
+   
+    
+}
+footer li{
+    display: inline-block;/*Sosyal media ikonlarımızı yan yana getirdik.*/
+    margin-right: 1rem;/*her bir li elemanı arasında sağdan 10px boşluk braktık.*/
+    padding-top: 1rem;/*Butonların h4 ile arasındaki mesafeyi ayarladık.*/
+
+}
+/*copyright___________________________________________________________________*/
+.copyright{
+    background-color: #181D26;
+    text-align: center;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

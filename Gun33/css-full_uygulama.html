@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Viewport" content="width=device-width">
+    <!--Responsive Tasarımı Aktif hale getirdik.-->
+    <!--initial scale başlangıçtaki ölçeğini belirtik.-->
+
+    <!--Google-Font (lato Fontu) Kütüphane erişimi-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Google-Font (Montserrat Fontu) Kütüphane erişimi-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--İconu cektimiz internet adresi.-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>css-full_uygulama</title>
+    <meta name="keywords" content="css-full_uygulama çalışması">
+    <meta name="description" content="css-full_uygulama çalışması için buradayız.">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css-full_uygulama.css">
+
+
+</head>
+
+<body>
+    <!--sayfamızda html5 deki gibi tamamen mantıksal etiketleri kullanacağız (ornek: div yerine nav kullanımı gibi)-->
+    <nav>
+        <div class="container clearefix">
+            <div id="logo-box">
+                <a href="#" class="logo text-uppercase">Start Bootstrap</a>
+            </div>
+            <div id="nav-links" class="responsive">
+                <ul>
+                    <li class="nav-ıtems">
+                        <!--Pencere Küçüldüğünde çıkacak olan menu iconu-->
+                        <a href="#" class="nav-link text-uppercase nav-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <!--___________________________________________________-->
+
+                    <li class="nav-ıtems">
+                        <a href="#" class="nav-link text-uppercase">Portfolio</a>
+                    </li>
+                    <li class="nav-ıtems">
+                        <a href="#" class="nav-link text-uppercase">About</a>
+                    </li>
+                    <li class="nav-ıtems">
+                        <a href="#" class="nav-link text-uppercase">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </nav>
+    <header>
+        <div class="container">
+            <img id="profile-img" class="img-fluit" src="../Gun33/profile-img.png" alt="">
+            <h1 class="text-uppercase">Start Bootstrap</h1>
+            <hr class="star-light">
+            <h2 class="text-capitalize">veb developer - graphicArtist - user Experience designer</h2>
+
+        </div>
+    </header>
+    <!--Uygyulamamda kullacağı herhangi bir bölümü kasdediyorum selection ile
+         birden fazla bölüm olacağı için id ile herbirini benzersiz yapıyorum -->
+    <section id="Portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <hr class="star-dark">
+            <div class="portfolio-image clearefix">
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluit" src="../Gun33/img1.jpg" alt="">
+
+                            <!--Overlay olayı-->
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluit" src="../Gun33/img2.jpg" alt="">
+
+                            <!--Overlay olayı-->
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluit" src="../Gun33/img3.jpg" alt="">
+
+                            <!--Overlay olayı-->
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluit" src="../Gun33/img4.jpg" alt="">
+
+                            <!--Overlay olayı-->
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluit" src="../Gun33/img5.jpg" alt="">
+
+                            <!--Overlay olayı-->
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-fluit" src="../Gun33/img6.jpg" alt="">
+
+                            <!--Overlay olayı-->
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="about">
+
+        <h2 class="text-uppercase"> about</h2>
+        <hr class="star-light">
+        <div class="about-text clearefix">
+            <div class="left">
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, inventore animi quis totam minima
+                    sit eaque delectus, vel reprehenderit temporibus expedita. Cupiditate, repellat eligendi eaque
+                    officia alias ab animi sit?
+                </p>
+            </div>
+            <div class="right">
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae ratione velit hic quo officia,
+                    exercitationem temporibus fuga, nam corrupti nemo facere ut omnis assumenda corporis distinctio
+                    minus, ipsa consectetur.
+                </p>
+            </div>
+        </div>
+        <button class="btn btn-outline btn-large">
+            <i class="fas fa-download"></i> Download Now!
+        </button>
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase">Contact Me</h2>
+            <hr class="star-dark">
+
+            <form id="contact-form" action="">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Email">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="phone">
+
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Message"></textarea>
+
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-large">
+                        Send
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container clearefix">
+            <div class="col">
+                <h4 class="text-uppercase">Loction</h4>
+                <p>Akademi, Gürbulut Sk. NO: 67, 42150 Selçuklu/Konya</p>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">Araund The Web</h4>
+                <ul>
+
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-youtube"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">Abaut Freelancer</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid possimus ex, sit iusto voluptatem magnam, cupiditate,
+                    inventore corrupti eius nulla aperiam ut earum doloribus labore
+                    perspiciatis illum vero quo aut!</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <small>
+            Copyright © Recep ALTUN
+        </small>
+    </div>
+
+
+
+    <!--java sınıf kütüphanesidir.bu jquary yazmamızı sağlayacak.-->
+    <script
+        src = "https://code.jquery.com/jquery-3.5.1.min.js">
+        
+
+    </script>
+    <script>
+            //responsive clası #nav-links içinde varsa ekle yada çıkarma işlemi yapacak.
+            $('.nav-icon').click(function () {
+                $('#nav-links').toggleClass('responsive')
+                return false;
+            })
+
+    </script>
+</body>
+
+</html>
