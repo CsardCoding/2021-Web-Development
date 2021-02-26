@@ -1,0 +1,140 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearafix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav {
+  background-color: orange;
+  padding: 10px;
+  width: 100%;
+}
+
+nav .nav-left {
+  float: left;
+  list-style: none;
+}
+
+nav .nav-left li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav .nav-left li:first-child {
+  margin-left: 0;
+}
+
+nav .nav-left a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav .nav-right {
+  float: right;
+  right: 10px;
+}
+
+nav .nav-right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.btn1-sag, .btn2-sag {
+  width: 75px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 12%;
+  top: 10px;
+}
+
+.btn1-sag:link {
+  background-color: blue;
+}
+
+.btn1-sag:hover {
+  background-color: #0000cc;
+  /*rengin koyulaşmasını sağlar.*/
+}
+
+.btn2-sag:link {
+  background-color: blue;
+}
+
+.btn2-sag:hover {
+  background-color: #9999ff;
+  /*rengi açmayı sağlar.*/
+}
+
+/*header_________________________________________-*/
+/*__________________uzun yol _____________________
+header{
+    #first{
+        width: 150px;
+        height: 150px;
+        background-color: $mavi;
+    }
+    #second{
+        width: 150px;
+        height: 150px;
+        background-color: $orange;
+
+    }
+    #third{
+        width: 150px;
+        height: 150px;
+        background-color: $red;
+    }
+}
+*/
+/*_______________________@mixin örneği__________________________*/
+header div {
+  float: left;
+}
+
+header #first {
+  /*@mixin içine parametre girerek kolayca renk ataması yapabiliyoruz.*/
+  width: 250px;
+  height: 400px;
+  background-color: yellow;
+}
+
+header #second {
+  /*@mixin içine parametre girerek kolayca renk ataması yapabiliyoruz.*/
+  width: 150px;
+  height: 250px;
+  background-color: gray;
+}
+
+header #third {
+  /*@mixin içine parametre girerek kolayca renk ataması yapabiliyoruz.*/
+  width: 200px;
+  height: 120px;
+  background-color: green;
+}
+
+/*___________________________extends örneği___________________*/
+.kutu, header .d1, header .d2, header .d3 {
+  float: right;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 2px;
+}
+
+header .d1, header .d2 {
+  font-size: 20px;
+  color: #fff;
+}
+
