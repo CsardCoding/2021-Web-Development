@@ -1,0 +1,57 @@
+
+.container{
+    background-color: gray;
+    padding: 1.5rem;
+    /*flex-direction:column;___sıralamayı stun şeklinde yaparsak
+     itemlerin sağa ve sola hizalanmasını align-items ile yapacagız.*/
+
+
+
+    display: flex;/*item lerimizi yan yana getirdik. 
+    satırda topladık ve artık herbir item'i istediğim gibi hareket ettirebilirim.*/
+    /*overflow: auto;taşan 2 kutuyu container içine sığdırmayı sağladık.*/
+    /*________________CONTAİNER'IN SATIR VE COLON ŞEKLİNDE HİZALANMASI___________________________________*/
+    /*flex-direction: row-reverse;____ilk elemanı sağa yaslayacak şekilde sıraladı.*/
+    /*flex-direction: column;____satırlar halinde normal sıralama yaptı.*/
+    /*flex-direction: column-reverse;___satır halinde en son elemanı en başa alacak şekilde sıralama yaptı.*/
+    flex-direction: row;/*___varsayılandır. container içindekileri yan yana getirir.*/
+    
+    /*____sıgdırma işlemini aşağıdakşi yöntemle yapabilirsiniz.____*/
+    /*flex-wrap: nowrap;___varsayılan özellik.sigdırma işlemi yapılmaz taşar.*/
+    /*flex-wrap: wrap;___container içine sığdırı satır dolduktan sonra kalanlar aşagıya iner.*/
+    /*flex-wrap: wrap-reverse;___container içine sığdırı satır dolduktan sonra kalanlar yukarıya çıkar.*/
+
+    
+    /*________________CONTAİNER İÇİNDEKİ ELEMANLARIN SATIRDAKİ YANİ YATAYDA HİZALANMASI__________________*/
+
+    justify-content: center;/*___Container içindeki elamanları ortalar.*/
+    /*justify-content: flex-start;___container içindeki elemanları sola hizalar.*/
+    /*justify-content: flex-end;___container içindeki elemanları sağa hizalar.*/
+    /*justify-content: space-between;___Boşlukları container içindeki elemanlara eşit şekilde dağıttı.*/
+    /*justify-content: space-around;___boşlukları sağ başlangıç ve bitiş te eşit ve az elemanlar arasında fazla ve eşit dağıttı.*/
+    /*justify-content: space-evenly;__Boşlukları sağ başlangıç ve sol bitiş dahil elemanlar aranda eşit şekilde dağıttı.*/
+
+
+    /*________________CONTAİNER İÇİNDEKİ ELEMANLARIN STUNA YANİ DİKEYDE HİZALANMASI__________________*/
+    /*align-items: stretch;___varsayılan özelliktir. yükseklik verilen item'e göre kendilerini ayarladılar.*/
+    /*align-items: center;___yükseklik verilenden bağımsız içerik yükseklikleri kadar container'ı ortaladılar.*/
+    /*align-items: flex-start;___yükseklik verilenden bağımsız içerik yükseklikleri kadar container'ın üstüne hizalandı.*/
+    /*align-items: flex-end; ___yükseklik verilenden bağımsız içerik yükseklikleri kadar container'ın altından hizalandıladı.*/
+    /*align-items: baseline;___contaner içindeki item  içeriğinin alt sınırından hizalama yapıldı.*/
+    .item{
+        font-size: 1.6rem;
+        padding:4rem;
+        background-color: green;
+        margin:2rem;
+        color:#fff;
+        
+
+    }
+    .i2{
+        height: 20rem;
+    }
+    .i3{
+        height: 30rem;
+        font-size: 5rem;
+    }
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/*@import "_flex-container-hizalama";*/
+.container {
+  background-color: gray;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*item lerimizi yan yana getirdik. 
+    satırda topladık ve artık herbir item'i istediğim gibi hareket ettirebilirim.*/
+  /*overflow: auto;taşan 2 kutuyu container içine sığdırmayı sağladık.*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*___Container içindeki elamanları ortalar.*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*flex-wrap: wrap;___container içine sığdırı satır dolduktan sonra kalanlar aşagıya iner.*/
+}
+
+.container .item {
+  font-size: 1.6rem;
+  padding: 4rem;
+  background-color: green;
+  margin: 2rem;
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .i2 {
+  height: 20rem;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  /*i2 yi en sona aldık.*/
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  /*Elemanın büyümesi ile alakalı. items kılasına sahip tüm elemanlar 1 alan kaplarken
+         bu onlara oranla 5 kat fazla alan kaplayacak.*/
+  /*_______________________________________________________________________________________
+         flex-basis: 30rem;
+         flex-shrink: 0;___Elemanın daralması ile alakalı. hiçbir zaman daralmasın basis deki değeri korusun istedik.
+         Tüm bunları tek bir satırda da yapabiliriz*/
+  -ms-flex: 1 0 200px;
+      flex: 1 0 200px;
+  /*grow-shrink-basis*/
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  /*Grow bunun gibi tek değer veya 2 veya 3 değer ataması da yapılabilmektedir.*/
+}
+
+.container .i4 {
+  /*Container içinde sadece kendini konumlandırma işlemlerini (align-self) ile yapıyoruz.*/
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  /*Container'ın alt kısmına hizaladı.*/
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  /*Container'ın üst kısmına hizaladı.*/
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  /*elemanların sırasını belirledik. burada i4 ü en başa aldık.*/
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  /*satırdaki yani blok olarak düşün ve bloğun %20 sini kapla dedik.
+        %lik olduğu için sayfa küçüldükçe buda o oranda azalacaktır. */
+}
+
+.container {
+  background-color: gray;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*item lerimizi yan yana getirdik. 
+    satırda topladık ve artık herbir item'i istediğim gibi hareket ettirebilirim.*/
+  /*overflow: auto;taşan 2 kutuyu container içine sığdırmayı sağladık.*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*___Container içindeki elamanları ortalar.*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .item {
+  font-size: 1.6rem;
+  padding: 4rem;
+  background-color: green;
+  margin: 2rem;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

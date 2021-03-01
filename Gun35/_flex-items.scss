@@ -1,0 +1,46 @@
+.container{
+    background-color: gray;
+    padding: 1.5rem;
+    display: flex;/*item lerimizi yan yana getirdik. 
+    satırda topladık ve artık herbir item'i istediğim gibi hareket ettirebilirim.*/
+    /*overflow: auto;taşan 2 kutuyu container içine sığdırmayı sağladık.*/
+    justify-content: center;/*___Container içindeki elamanları ortalar.*/
+    align-items:center;
+    /*flex-wrap: wrap;___container içine sığdırı satır dolduktan sonra kalanlar aşagıya iner.*/
+    
+
+    .item{
+        font-size: 1.6rem;
+        padding:4rem;
+        background-color: green;
+        margin:2rem;
+        color:#fff;
+        flex-grow: 1;
+        
+
+    }
+    .i2{
+        height: 20rem;
+        order:4;/*i2 yi en sona aldık.*/
+        flex-grow: 5;/*Elemanın büyümesi ile alakalı. items kılasına sahip tüm elemanlar 1 alan kaplarken
+         bu onlara oranla 5 kat fazla alan kaplayacak.*/
+         /*_______________________________________________________________________________________
+         flex-basis: 30rem;
+         flex-shrink: 0;___Elemanın daralması ile alakalı. hiçbir zaman daralmasın basis deki değeri korusun istedik.
+         Tüm bunları tek bir satırda da yapabiliriz*/
+         flex: 1 0 200px ;/*grow-shrink-basis*/
+         flex:2;/*Grow bunun gibi tek değer veya 2 veya 3 değer ataması da yapılabilmektedir.*/
+        
+        }
+
+    .i4{
+        /*Container içinde sadece kendini konumlandırma işlemlerini (align-self) ile yapıyoruz.*/
+        align-self: flex-end;/*Container'ın alt kısmına hizaladı.*/
+        align-self: flex-start;/*Container'ın üst kısmına hizaladı.*/
+        align-self: stretch;
+        order: -1;/*elemanların sırasını belirledik. burada i4 ü en başa aldık.*/
+        flex-basis: 20%; /*satırdaki yani blok olarak düşün ve bloğun %20 sini kapla dedik.
+        %lik olduğu için sayfa küçüldükçe buda o oranda azalacaktır. */
+
+    }
+}

@@ -1,0 +1,24 @@
+@import "body";
+/*@import "_flex-container-hizalama";*/
+@import "flex-items";
+
+.container{
+    background-color: gray;
+    padding: 1.5rem;
+    display: flex;/*item lerimizi yan yana getirdik. 
+    satırda topladık ve artık herbir item'i istediğim gibi hareket ettirebilirim.*/
+    /*overflow: auto;taşan 2 kutuyu container içine sığdırmayı sağladık.*/
+    justify-content: center;/*___Container içindeki elamanları ortalar.*/
+    align-items:center;
+ 
+    .item{
+        font-size: 1.6rem;
+        padding:4rem;
+        background-color: green;
+        margin:2rem;
+        color:#fff;
+        
+
+    }
+    
+}
