@@ -1,0 +1,22 @@
+@import "_body";
+/*@import "flex-margin";*/
+/*@import "flext-box-rowalignment";*/
+
+.container{
+    background-color: gray;
+    padding: 1.5rem;
+    display: flex;
+
+    /*Container içinde birden fazla satır varsa bunların container içinde hizalanması.*/
+
+
+    .item{
+       font-size: 1.6rem;
+       padding: 4rem;
+       background-color: orange;
+       color:#fff;
+
+    }
+    
+    
+}

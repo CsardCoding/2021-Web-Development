@@ -1,0 +1,21 @@
+.container{
+    flex-wrap: wrap;
+    flex:1;
+    height: 1000px;
+    align-content:flex-start ;/*___Hizalama container üstünden yapılır.*/
+    align-content: flex-end;/*___Hizalama container altından yapılır.*/
+    align-content: stretch;/*___varsayılan.*/
+    align-content: center;/*___Hizalama container ortasına yapılır.*/
+    align-content: space-between;/*___köşeler(üst-alt) hariç içini satırlara eğit paylaştırır..*/
+    align-content: space-around;/*___container içindeki boşluğu üstten alttan bir birim satırlar 
+    arasında 2 şerbirm şeklinde paylaştırarak hizalama yaptı.*/
+    align-content:space-evenly;/*köşelerden ve aralarında eşit mesafe yapmak istiyorsak*/
+    
+    .item{
+
+    }
+    .i9 {
+        flex:1;
+    }
+    
+}
