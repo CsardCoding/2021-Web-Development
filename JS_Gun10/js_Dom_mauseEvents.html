@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_Dom_mauseEvents</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .container {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: rgb(184, 171, 132);
+
+        }
+
+        .child-diw {
+            width: 200px;
+            display:inline-block;
+        
+        }
+        #div2{
+            float: right;
+        }
+        .btn1{
+            margin-left: 80px;
+            
+        }
+        .h1{
+            text-align: center;
+            font-weight: bold;
+            color:white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" >
+        <h1 class="h1"></h1>
+        <div id="div1" class="child-diw">
+            <ul class="list-group1" id="rakamTurkce">
+                <li class="list-group-item ">Sıfır</li>
+                <li class="list-group-item ">Bir</li>
+                <li class="list-group-item ">İki</li>
+                <li class="list-group-item ">Üc</li>
+                <li class="list-group-item ">Dört</li>
+                <li class="list-group-item ">Beş</li>
+            </ul>
+            <button type="button" class="btn1 btn btn-danger">Danger</button> 
+        </div>
+        <div id="div2" class="child-diw" class="rakamİngilizce">
+            <a href="#" class="list-group-item list-group-item-action">Zero</a>
+            <a href="#" class="list-group-item list-group-item-action">One</a>
+            <a href="#" class="list-group-item list-group-item-action">Two</a>
+            <a href="#" class="list-group-item list-group-item-action">Three</a>
+            <a href="#" class="list-group-item list-group-item-action">Four</a>
+            <a href="#" class="list-group-item list-group-item-action">Five</a>
+        </div>
+
+    </div>
+
+    <script src="../JS_Gun10/js_Dom_mauseEvents.js">
+
+    </script>
+</body>
+
+</html>
