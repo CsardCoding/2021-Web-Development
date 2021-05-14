@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje2</title>
+
+
+    <!--İconu cektimiz internet adresi.-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <!--jQuery kaynak dosyamız-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--css dosyamınızı sayfamıza ekledik. -->
+    <link rel="stylesheet" href="../proje2/proje2.css">
+    <STYle>
+      
+    </STYle>
+
+</head>
+
+<body>
+
+    <div id="görevEkleme" class="bg-dark">
+        <div class="container p-3">
+            <h1 class="gorevlistem text-center text-danger" id="h1-1">week mission plan</h1>
+            <div class="kart">
+                <div class="kart-header bg-secondary">
+                    <form action="" id="form-gorev" class="p-3">
+                        <div class="formdiv ">
+                            <input type="text" id="text-girdi" class="form-kontrol form-control form-control-lg" placeholder="Yeni Görev Ekle">
+                            <div class="ekle-liste float-right">
+                                <button class="btn btn-info" id="kaydet-boton">
+                                    <i id="ekle-icon" class="fas fa-plus"></i>
+
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+                <div class="kart-body p-3">
+                    
+                    <!----------------gün içindeki liste------------------------------->
+                    
+
+                    <!------------------------------------------------------------------->
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </div>
+    <table id="GOREVTABLOM" class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col" class="bg-dark text-danger">
+                    <i id="Icon-onay" class="fas fa-calendar-check fa-3x bg-dark"></i>
+                </th>
+                <th scope=" col" class="baslık bg-dark text-info">PAZRTESİ 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxpazartesi"  value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+                <th scope="col" class="baslık bg-dark text-info">SALI
+                    <div class="form-check form-check-inline">
+                       
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxsalı" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+                <th scope="col" class="baslık bg-dark text-info">ÇARŞAMBA
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxcarsamba" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+                <th scope="col" class="baslık bg-dark text-info">PERŞEMBE
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxpersembe" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+                <th scope="col" class="baslık bg-dark text-info">CUMA
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxcuma" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+                <th scope="col" class="baslık bg-dark text-info">CUMARTSİ
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxcumartesi" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+                <th scope="col" class="baslık bg-dark">PAZAR
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eklecheckbox" type="checkbox" id="inlineCheckboxpazar" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">✓</label>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td>
+                    <div class="kart-2 ">
+                        
+                        <ul id="listem" class="list-group">
+                        </ul>
+                        <a href="#" id="hepsiniSil" class="btn btn-outline-danger  delete-all">Tümünü
+                            Temizle</a>
+                
+                    
+                </div></td>
+                <td><div id="divSatır"></div></td>
+                <td><div id="divSatır"></div></td>
+                <td><div id="divSatır"></div></td>
+                <td><div id="divSatır"></div></td>
+                <td><div id="divSatır"></div></td>
+                <td><div id="divSatır"></div></td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+
+   
+    <script src="../proje2/proje2.js">
+
+    </script>
+</body>
+
+</html>

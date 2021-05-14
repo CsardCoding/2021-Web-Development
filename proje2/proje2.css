@@ -1,0 +1,59 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#Icon-onay {
+    color: rgb(255, 158, 47);
+
+
+}
+
+table th {
+    text-align: center;
+    color: greenyellow;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+}
+
+#divSatır {
+    width: auto;
+    height: auto;
+}
+
+#GOREVTABLOM {
+    border: 0px;
+}
+
+td {
+    border: 1px solid red;
+}
+.kart-2{
+    text-align: center;
+}
+
+
+
+
+
+.kart-header{
+    border-radius: 8px;
+
+}
+input[type=text]{
+    width: 95%;
+}
+#ekle-icon{
+    font-size: 100%;
+    
+}
+#hepsiniSil{
+    font-size: 12px;
+}
+
+ul li{
+    font-size: 10px;
+}
